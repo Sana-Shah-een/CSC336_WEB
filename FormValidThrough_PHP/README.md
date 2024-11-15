@@ -27,6 +27,6 @@ This project showcases a form validation example using HTML, CSS for styling, an
 ### Installation
 
  - Clone this repository:
-   git clone https://github.com/Sana-Shah-een/FormValidThrough_PHP.git
+   git clone https://github.com/Sana-Shah-een/CSC336_WEB/tree/main/FormValidThrough_PHP
 
 
