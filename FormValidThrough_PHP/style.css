@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-sarif;
+}
+
+body{
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 63, 185);
+}
+.container{
+    width: 720px;
+    background: white;
+    border-radius: 5px;
+}
+.container header{
+    padding-left: 33px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+}
+.error{
+    color: red;
+}
+.container form{
+    margin: 35px 30px ;
+}
+form .fields{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.fields .field{
+    height:50px;
+    width: 300px;
+    position: relative;
+}
+form .field input,
+form .message textarea{
+    height: 100%;
+    width: 100%;
+    padding: 0px 18px 0px 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+form .field input::placeholder,
+form .message textarea::placeholder{
+    color: lightgrey;
+}
+form .field input:focus,
+form .message textarea:focus{
+    border: 3px solid rgb(63, 63, 185) ;
+}
+.container form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: lightgrey;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .field input:focus ~ i,
+form .message textarea:focus ~ i{
+    color: rgb(63, 63, 185);
+}
+form .message{
+    position: relative;
+}
+form .message i{
+    top: 25px;
+    font-size: 20px;
+}
+form .message textarea{
+    min-height: 120px;
+    padding: 15px 20px 0 48px;
+}
+form .btn{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.btn button{
+    font-size: 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(63, 63, 185);
+    padding: 13px 25px;
+}
+
+
+@media(max-width: 600px){
+    .container header{
+        text-align: center;
+    }
+    form .fields{
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .fields .field{
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    form .message textarea{
+        resize:none;
+    }
+    form .btn{
+        flex-direction: column;
+    }
+    .btn button{
+        width: 100%;
+    }
+   
+}

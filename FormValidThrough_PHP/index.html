@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>Send Us a Message</header>
+        <form action="data1.php" method="post">
+            <p style="margin:8px" ><span class="error" >* required field</span></p>
+            <div class="fields">
+                <div class="field">
+                    <input type="text" name="user" placeholder="Enter Your Name" >
+                    <i class="fas fa-user"></i>
+                    <span class="error">* </span>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" placeholder="Enter Your Email" >
+                    <i class="fas fa-envelope"></i>
+                    <span class="error">* </span>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <input type="text" name="phone" placeholder="Enter Your Phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="error">* </span>
+                </div>
+                <div class="field">
+                    <input type="text" name="website" placeholder="Enter Your Website" >
+                    <i class="fas fa-globe"></i>
+                  
+                </div>
+            </div>
+            <div class="message">
+                <textarea name="msg" placeholder="Write your Message"></textarea>
+                <i class="fas fa-comment"></i>
+            </div>
+            <div class="btn">
+                <button type="submit" name="submitbtn">Send Message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
